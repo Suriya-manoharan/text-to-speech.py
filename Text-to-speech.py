@@ -2,10 +2,9 @@
 # coding: utf-8
 
 # In[78]:
-
+#@author :suriyamanoharan
 
 #pip install gTTS
-
 
 
 
@@ -17,11 +16,11 @@ import os
 
 # The text that you want to convert to audio by text
 
-# mytext = 'Welcome to ext to speech converter in python'
+# mytext = 'Welcome to ext to speech converter in python'//your can directly type string here and save the output 
 
 # This function is used for read from text file
 
-f = open("/home/100158/Python-Projects/Text-t0-speech/TextFile.txt","r")#world text file
+f = open("your_input_file.txt","r")#world text file
 string = f.read()
 # it can convert into string
 mytext = string.replace('\n', '')
@@ -40,7 +39,7 @@ myobj = gTTS(text=mytext, lang=language, slow=False)
 
 # Saving the converted audio in a mp3 file named 
 # welcome 
-myobj.save("/home/100158//Python-Projects/Text-t0-speech/output.mp3") 
+myobj.save("your_output_location/output.mp3") 
 
 # Playing the converted file 
 os.system("output.mp3") 
